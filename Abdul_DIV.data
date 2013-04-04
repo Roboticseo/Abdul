@@ -8,11 +8,10 @@ DIMENS
 EQLDIMS
 1
 /
-
-RUNCTRL
-TOLVARNEWT  1E-2
-TOLLIN 1e-2
- /
+REPORTFILE
+ALL LOW
+ITERS DEBUG
+/ It requests the debug info (errors and deviation)
 
 OIL
 WATER
@@ -153,7 +152,7 @@ fipnum=pvtnum /
 SOLUTION
 
 EQUIL
-     1700   186   1900    1*     1*    1*    1	1	0	1*   /--Уточнить ЗСВ
+     1700   186   1900    1*     1*    1*    1 1       0       1*   /
 /
 
 
@@ -210,6 +209,8 @@ INCLUDE
   'INCL\event.inc' /
 INCLUDE 
   'INCL\hist.inc' /
+INCLUDE 
+  'INCL\WFRP.INC' /
 
 READ 1 MAR 2013 /
 
